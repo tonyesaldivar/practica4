@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvRes"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#F44336"
+            android:textSize="48sp" />
+
+        <EditText
+            android:id="@+id/etVal1"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="Escribe un número"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etVal2"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="Escribe un número"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_suma"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="sumar"
+            android:text="suma"
+            android:textSize="20sp"
+            app:backgroundTint="#009688" />
+
+        <Button
+            android:id="@+id/button_resta"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="restar"
+            android:text="resta"
+            android:textSize="20sp"
+            app:backgroundTint="#009688" />
+
+        <Button
+            android:id="@+id/button_multiplica"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="multiplicar"
+            android:text="multiplicación"
+            android:textSize="20sp"
+            app:backgroundTint="#009688" />
+
+        <Button
+            android:id="@+id/button_divide"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="dividir"
+            android:text="división"
+            android:textSize="20sp"
+            app:backgroundTint="#009688" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Práctica 4 - Calculadora"
+            android:inputType="textPersonName"
+            android:text="Práctica 4 - Calculadora"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
